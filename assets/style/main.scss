@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../font/Vazir.eot');
+    src: url('../font/Vazir.eot?#iefix') format('embedded-opentype'),
+        url('../font/Vazir.woff2') format('woff2'),
+        url('../font/Vazir.woff') format('woff'),
+        url('../font/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'vazir';
+    src: url('../font/Vazir-Bold.eot');
+    src: url('../font/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Vazir-Bold.woff2') format('woff2'),
+        url('../font/Vazir-Bold.woff') format('woff'),
+        url('../font/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'vazir';
+    src: url('../font/Vazir-Light.eot');
+    src: url('../font/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/Vazir-Light.woff2') format('woff2'),
+        url('../font/Vazir-Light.woff') format('woff'),
+        url('../font/Vazir-Light.ttf') format('truetype');
+    font-weight: 200;
+}
+
+$primary : #FF6700;
+$primary-dark : #793000;
+$primary-50 : #ff66005e;
+$Second : #004E98;
+$supplement : #3A6EA5;
+$background : #EBEBEB;
+$footer : #C0C0C0;
+
+@mixin flex-sb(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    background-color: $background;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+li{
+    text-wrap: nowrap;
+}
+a {
+    text-decoration: none;
+    color: black
+}
+
+@import "./scss/header";
