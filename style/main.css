@@ -163,6 +163,31 @@ header div.box div.left div::before {
 header div.box div.left div:hover::before {
   width: 250%;
 }
+header div.burger-box {
+  position: fixed;
+  top: 0px;
+  right: 100%;
+  width: 50vw;
+  height: 100vh;
+  background-color: #333;
+  transition: 0.5s;
+}
+header div.burger-box ul {
+  margin-top: 13px;
+}
+header div.burger-box ul li {
+  text-align: center;
+}
+header div.burger-box ul li a {
+  color: white;
+  transition: 0.5s;
+}
+header div.burger-box ul li a:hover {
+  color: rgb(255, 139.48, 61.2);
+}
+header div.burger-box ul hr {
+  border: 1px solid rgba(255, 255, 255, 0.452);
+}
 
 @media only screen and (max-width: 1140px) {
   header.rounded-bottom-5 {
