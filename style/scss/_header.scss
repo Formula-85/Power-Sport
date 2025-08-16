@@ -1,0 +1,82 @@
+header {
+    background-color: $supplement;
+    margin: 0px 150px;
+    padding: 13px 0px;
+    font-size: 1rem;
+
+    div.box {
+        @include flex-sb();
+
+        div.right {
+            @include flex-sb();
+
+            img {
+                max-width: 25%;
+            }
+
+            ul {
+                @include flex-sb();
+                position: relative;
+                top: 5px;
+                margin-right: 25px;
+
+                li {
+                    padding: 10px;
+                    font-weight: bold;
+                    font-size: 1.2em;
+
+                    a {
+                        color: white;
+                        transition: 0.2s;
+                    }
+
+                    a:hover {
+                        color: lighten($color: $primary, $amount: 12);
+                    }
+                }
+            }
+        }
+
+        div.left {
+            .btn-login {
+                padding: 1em 2em;
+                border: none;
+                border-radius: 5px;
+                font-weight: bold;
+                text-transform: uppercase;
+                cursor: pointer;
+                color: $primary;
+                transition: all 1000ms;
+                font-size: 15px;
+                position: relative;
+                overflow: hidden;
+                outline: 2px solid $primary;
+            }
+
+            div:hover {
+                color: #ffffff;
+                transform: scale(1.1);
+                outline: 2px solid $primary-50;
+                box-shadow: 4px 5px 17px -4px $primary-dark;
+            }
+
+            div::before {
+                content: "";
+                position: absolute;
+                left: -50px;
+                top: 0;
+                width: 0;
+                height: 100%;
+                background-color: $primary;
+                transform: skewX(45deg);
+                z-index: -1;
+                transition: width 1000ms;
+            }
+
+            div:hover::before {
+                width: 250%;
+            }
+
+        }
+    }
+}

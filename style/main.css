@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../font/Vazir.eot");
+  src: url("../font/Vazir.eot?#iefix") format("embedded-opentype"), url("../font/Vazir.woff2") format("woff2"), url("../font/Vazir.woff") format("woff"), url("../font/Vazir.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "vazir";
+  src: url("../font/Vazir-Bold.eot");
+  src: url("../font/Vazir-Bold.eot?#iefix") format("embedded-opentype"), url("../font/Vazir-Bold.woff2") format("woff2"), url("../font/Vazir-Bold.woff") format("woff"), url("../font/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "vazir";
+  src: url("../font/Vazir-Light.eot");
+  src: url("../font/Vazir-Light.eot?#iefix") format("embedded-opentype"), url("../font/Vazir-Light.woff2") format("woff2"), url("../font/Vazir-Light.woff") format("woff"), url("../font/Vazir-Light.ttf") format("truetype");
+  font-weight: 200;
+}
+body {
+  background-color: #EBEBEB;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+li {
+  text-wrap: nowrap;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-color: #3A6EA5;
+  margin: 0px 150px;
+  padding: 13px 0px;
+  font-size: 1rem;
+}
+header div.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div.box div.right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div.box div.right img {
+  max-width: 25%;
+}
+header div.box div.right ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 5px;
+  margin-right: 25px;
+}
+header div.box div.right ul li {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+header div.box div.right ul li a {
+  color: white;
+  transition: 0.2s;
+}
+header div.box div.right ul li a:hover {
+  color: rgb(255, 139.48, 61.2);
+}
+header div.box div.left .btn-login {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #FF6700;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #FF6700;
+}
+header div.box div.left div:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid rgba(255, 102, 0, 0.368627451);
+  box-shadow: 4px 5px 17px -4px #793000;
+}
+header div.box div.left div::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #FF6700;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+header div.box div.left div:hover::before {
+  width: 250%;
+}/*# sourceMappingURL=main.css.map */
